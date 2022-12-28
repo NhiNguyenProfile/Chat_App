@@ -509,6 +509,8 @@ body {
   padding: 3vh;
   font-size: 2vh;
   border-radius: 25px 25px 25px 0;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.958);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.958);
 }
 
 .container .chat-detail__messages .message.me {
