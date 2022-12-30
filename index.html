@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="chat-list">
+      <div class="chat-list" >
         <img src="./image/paper.png" alt="" />
         <div class="chat-list__wrapper">
           <div class="chat-list__wrapper__information">
@@ -32,6 +32,7 @@
               icon="ic:round-group-add"
               id="btnAddChat"
             ></iconify-icon>
+            <audio id="audio" src="./audio/weee.mp3"></audio>
           </div>
 
           <div class="chat-list__wrapper__items">
@@ -97,6 +98,7 @@
           </div>
         </div>
       </div>
+      <img src="./image/pingpao.png" alt="" id="pingpao">
       <div class="chat-detail">
         <div class="chat-detail__header">
           <img
@@ -199,6 +201,15 @@
       </div>
     </div>
 
+
+    <div class="pop-up" id="popUp">
+      <div class="pop-up__overlay"></div>
+      <div class="pop-up__form">
+        <h3>Tạo nhóm</h3>
+      </div>
+    </div>
+
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -68,43 +68,37 @@
 
 @-webkit-keyframes shake {
   from {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
   50% {
-    top: 76vh;
-    left: 19%;
-    right: 70%;
-    bottom: 4vh;
+    scale: 1.03;
+    top: 73vh;
+    left: 19vw;
   }
   to {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
 }
 
 @keyframes shake {
   from {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
   50% {
-    top: 76vh;
-    left: 19%;
-    right: 70%;
-    bottom: 4vh;
+    scale: 1.03;
+    top: 73vh;
+    left: 19vw;
   }
   to {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
 }
 
@@ -360,17 +354,15 @@ body {
   font-weight: 800;
 }
 
-.container .chat-list::after {
-  content: "";
-  background-image: url("../image/pingpao.png");
-  background-size: cover;
+.container #pingpao {
   position: absolute;
-  top: 78vh;
-  left: 19%;
-  right: 70%;
-  bottom: 2.5vh;
-  -webkit-animation: shake 2s ease-in-out infinite;
-          animation: shake 2s ease-in-out infinite;
+  height: 20vh;
+  top: 76vh;
+  left: 19vw;
+  -webkit-animation: shake 2s infinite ease-in-out;
+          animation: shake 2s infinite ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .container .chat-detail {
@@ -562,5 +554,25 @@ body {
   padding: 2.5vh 4vh;
   width: 80%;
   border-radius: 40px;
+}
+
+.pop-up {
+  position: fixed;
+  top: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.pop-up__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */

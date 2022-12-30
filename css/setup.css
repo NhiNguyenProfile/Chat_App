@@ -68,43 +68,37 @@
 
 @-webkit-keyframes shake {
   from {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
   50% {
-    top: 76vh;
-    left: 19%;
-    right: 70%;
-    bottom: 4.5vh;
+    scale: 1.03;
+    top: 73vh;
+    left: 19vw;
   }
   to {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
 }
 
 @keyframes shake {
   from {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
   50% {
-    top: 76vh;
-    left: 19%;
-    right: 70%;
-    bottom: 4.5vh;
+    scale: 1.03;
+    top: 73vh;
+    left: 19vw;
   }
   to {
-    top: 78vh;
-    left: 19%;
-    right: 70%;
-    bottom: 2.5vh;
+    scale: 1;
+    top: 76vh;
+    left: 19vw;
   }
 }
 /*# sourceMappingURL=setup.css.map */
