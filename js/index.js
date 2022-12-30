@@ -1,14 +1,12 @@
 // tìm tới thằng có id btnAddChat và thêm sự kiện "click"
 
-let addButton, popUpElement, pingpao;
+let addButton, popUpElement, pingpao, audio;
 //DOM
 addButton = document.getElementById("btnAddChat");
 popUpElement = document.getElementById("popUp");
 pingpao = document.getElementById("pingpao");
-function play() {
-  var audio = document.getElementById("audio");
-  audio.play();
-}
+audio = document.getElementById("audio");
+
 // tham số 1: type
 // tham số 2: hành động tương ứng
 addButton.addEventListener("click", function () {
@@ -20,7 +18,7 @@ popUpElement.addEventListener("click", function () {
 });
 
 function showPopUp() {
-  play();
+  audio.play();
   popUpElement.style.height = "100vh";
   pingpao.style.transform =
     "translateY(-100vh) translateX(40vw) rotate(720deg)";
